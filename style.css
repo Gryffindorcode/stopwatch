@@ -1,0 +1,69 @@
+*,
+*::after
+*::before {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
+
+:root {
+  --primary: rebeccapurple;
+  --secondary: palegreen;
+  --dark: #1f2937;
+  --darkdark: #111827;
+  --light: #f3f4f6;
+}
+
+body {
+  font-family: 'fira sans', sans-serif;
+  background: var(--dark);
+  color: var(--light);
+}
+
+.watch {
+  text-align: center;
+  background: var(--darkdark);
+  max-width: 360px;
+  width: 100%;
+  margin: 4rem auto;
+  padding: 1rem 2rem;
+  border-radius: 1rem;
+}
+
+.time {
+  font-size: 5rem;
+  font-weight: 400;
+  margin-bottom: 1rem;
+}
+
+.controls {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.controls button {
+  appearance: none;
+  background: none;
+  border: none;
+  outline: none;
+  user-select: none;
+  cursor: pointer;
+
+  color: var(--light);
+  font-size: 1.125rem;
+  background: var(--primary);
+  margin: 0 0.5rem;
+  padding: 0.5rem 1rem;
+  border-radius: 0.5rem;
+
+  transition: 0,4s;
+}
+
+button:hover {
+  opacity: 0.7;
+}
+
+button:active {
+  background-color: var(--dark);
+}
