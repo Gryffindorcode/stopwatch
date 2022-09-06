@@ -1,4 +1,4 @@
-// Global variables //
+// Global variables
 
 const time_el = document.querySelector ('.watch .time');
 const start_btn = document.getElementById('start');
